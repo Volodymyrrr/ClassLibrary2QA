@@ -86,14 +86,14 @@ namespace ClassLibrary2.Tests
         }
 
 
-        //[Test]
-        //public void DisplayedLinkRegButton()
-        //{
+        [Test]
+        public void DisplayedLinkRegButton()
+        {
 
-        //    StartPage startPage = new StartPage(driver);
-        //    Assert.IsTrue(startPage.LinkRegButton.Displayed);
+            StartPage startPage = new StartPage(driver);
+            Assert.IsTrue(startPage.LinkRegButton.Displayed);
 
-        //}
+        }
 
 
         [Test]
@@ -105,14 +105,14 @@ namespace ClassLibrary2.Tests
 
         }
 
-        [Test]
-        public void DisplayedLabelRemember()
-        {
+        //[Test]
+        //public void DisplayedLabelRemember()
+        //{
 
-            StartPage startPage = new StartPage(driver);
-            Assert.IsTrue(startPage.LabelRemember.Displayed);
+        //    StartPage startPage = new StartPage(driver);
+        //    Assert.IsTrue(startPage.LabelRemember.Displayed);
 
-        }
+        //}
 
         [Test ]
         public void RegistrationHeaderLink ()
