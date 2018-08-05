@@ -86,14 +86,14 @@ namespace ClassLibrary2.Tests
         }
 
 
-        [Test]
-        public void DisplayedLinkRegButton()
-        {
+        //[Test]
+        //public void DisplayedLinkRegButton()
+        //{
 
-            StartPage startPage = new StartPage(driver);
-            Assert.IsTrue(startPage.LinkRegButton.Displayed);
+        //    StartPage startPage = new StartPage(driver);
+        //    Assert.IsTrue(startPage.LinkRegButton.Displayed);
 
-        }
+        //}
 
 
         [Test]
