@@ -3,6 +3,7 @@ using OpenQA.Selenium.Support.PageObjects;
 using ClassLibrary2.Extensions;
 using System;
 using NUnit.Framework;
+using OpenQA.Selenium.Support.UI;
 
 namespace ClassLibrary2.PageObjects
 {
@@ -13,11 +14,12 @@ namespace ClassLibrary2.PageObjects
         public IWebDriver driver;
         public StartPage(IWebDriver driver) => this.driver = driver;
 
-       // public static object LoginViaExtentions { get; internal set; }
+        // public static object LoginViaExtentions { get; internal set; }
 
         public IWebElement LoginInput => driver.FindElement(By.XPath("/html/body/div[3]/div[3]/div[3]/div[2]/div[1]/div[3]/form/ul/li[1]/p[2]/input"));
         public IWebElement PassInput => driver.FindElement(By.XPath("/html/body/div[3]/div[3]/div[3]/div[2]/div[1]/div[3]/form/ul/li[1]/input"));
-        public IWebElement SelectDown => driver.FindElement(By.XPath("/html/body/div[3]/div[3]/div[3]/div[2]/div[1]/div[3]/form/ul/li[2]/p/select"));
+        public IWebElement SelectDown => driver.FindElement(By.Name("domn"));
+        public SelectElement SelectDomain => new SelectElement(SelectDown);
         public IWebElement Check => driver.FindElement(By.Name("auth_type"));
         public IWebElement SendButton => driver.FindElement(By.XPath("//input[@value='Увійти']"));
         public IWebElement LinkButton => driver.FindElement(By.XPath("//a[text()='нагадати']"));

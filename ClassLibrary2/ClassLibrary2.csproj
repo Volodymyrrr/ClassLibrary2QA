@@ -61,6 +61,7 @@
     <Compile Include="Frameworks\TestBase.cs" />
     <Compile Include="Frameworks\GetConfigs.cs" />
     <Compile Include="Frameworks\Extensions.cs" />
+    <Compile Include="PageObjects\LoginPageObject.cs" />
     <Compile Include="Tests\ScreenshotDelete.cs" />
     <Compile Include="Tests\ScreenShot.cs" />
     <Compile Include="Tests\DownloadTests.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Tests\LogOut.cs" />
     <Compile Include="Tests\CreateLetterTests.cs" />
     <Compile Include="Tests\TranslatorTests.cs" />
+    <Compile Include="Tests\VolodymyrTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
