@@ -35,7 +35,7 @@ namespace ClassLibrary2.Tests
             startPage.LabelRemember.Click();
             startPage.SendButton.Click();
             loginPageObject = new LoginPageObject(driver);
-            //Assert.AreEqual(driver.Title, "Паспорт - I.UA ");
+            Assert.AreEqual(driver.Title, "Паспорт - I.UA ");
             Assert.IsTrue(loginPageObject.WrongLoginPasswordLabel.Displayed);
 
 
